@@ -1,12 +1,12 @@
 <?php
 include 'header.php';
-$id=$_GET['id'];
+$id=$_GET['updateid'];
 if (isset($_POST['submit'])) {
 $name=$_POST['name'];
 $email=$_POST['email'];
 $phone=$_POST['phone'];
 $password=$_POST['password'];
-$sql="UPDATE `users_table` SET id=$id,name='$name',email='$email',phone='$phone',password='$password' WHERE id=$id ";
+$sql = "UPDATE users_table SET id='$id', name='$name',email='$email', phone='$phone', password='$password' WHERE id=$id";
 
 ?>
 <!-- singup from start -->
@@ -20,33 +20,32 @@ echo '<div class="alert alert-success" role="alert">New record created faild</di
 };
 };
   ?>
-    <form action="post">
+    <form action="" method="POST">
+
+
         <div class="mb-3">
             <label for="exampleInputName" class="form-label">Your Name</label>
-            <input type="text" class="form-control" id="name" value="">
+            <input type="text" class="form-control" name="name" value="">
         </div>
         <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label" id="email">Email address</label>
-            <input type="email" class="form-control" value="">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" value="">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
             <label for="exampleInputphone" class="form-label">Phone Number</label>
-            <input type="text" class="form-control" id="phone" value="">
+            <input type="text" class="form-control" name="phone" value="">
             <div id="phoneHelp" class="form-text">We'll never share your phone with anyone else.</div>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="password" value="">
+            <input type="password" class="form-control" name="password" value="">
         </div>
-        <button type="submit" class="btn btn-primary" name="submit">Updated</button>
+        <button type="submit" class="btn btn-primary" name="submit">Sing Up</button>
     </form>
 
 </div>
 <!-- singup from End -->
-
-
-
 </div>
 </body>
 

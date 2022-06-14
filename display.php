@@ -25,7 +25,7 @@ include 'header.php';
                         <td>" . $row["phone"] .' </td>
                         <td>
                             <div class="btn-group">
-                                <a class="btn btn-outline-primary" href="edit.php?id='.$row["id"].'">Edit</a>
+                                <a class="btn btn-outline-primary" href="edit.php?updateid='.$row["id"].'">Edit</a>
                                 <a class="btn btn-outline-primary" href="delete.php?id='.$row["id"].'">Deleted</a>
                             </div>
                         </td>

@@ -9,7 +9,6 @@ include 'header.php';
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Phone</th>
-                <th scope="col">Password</th>
                 <th scope="col">Action</th>
             </tr>
         </thead>
@@ -18,7 +17,6 @@ include 'header.php';
                 <th scope="row">1</th>
                 <td>Mark</td>
                 <td>Otto</td>
-                <td>1236</td>
                 <td>@mdo</td>
                 <td>
                     <div class="btn-group">
@@ -32,7 +30,6 @@ include 'header.php';
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
-                <td>1236</td>
                 <td>@fat</td>
                 <td>
                     <div class="btn-group">
@@ -45,7 +42,6 @@ include 'header.php';
                 <th scope="row">2</th>
                 <td>Jacob</td>
                 <td>Thornton</td>
-                <td>1236</td>
                 <td>@fat</td>
                 <td>
                     <div class="btn-group">

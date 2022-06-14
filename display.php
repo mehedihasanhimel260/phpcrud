@@ -25,12 +25,8 @@ include 'header.php';
                         <td>" . $row["phone"] .' </td>
                         <td>
                             <div class="btn-group">
-                                <button type="button" class="btn btn-outline-primary">
-                                <a class="btn-outline-primary" href="edit.php?id='.$row["id"].'">Edit</a>
-                                </button>
-                                <button type="button" class="btn btn-outline-primary">
-                                <a class="btn-outline-primary" href="display.php?id='.$row["id"].'">Deleted</a>
-                                </button>
+                                <a class="btn btn-outline-primary" href="edit.php?id='.$row["id"].'">Edit</a>
+                                <a class="btn btn-outline-primary" href="delete.php?id='.$row["id"].'">Deleted</a>
                             </div>
                         </td>
                     </tr>' ;

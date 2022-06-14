@@ -1,8 +1,25 @@
 <?php
 include 'header.php';
+$id=$_GET['id'];
+if (isset($_POST['submit'])) {
+$name=$_POST['name'];
+$email=$_POST['email'];
+$phone=$_POST['phone'];
+$password=$_POST['password'];
+$sql="UPDATE `users_table` SET id=$id,name='$name',email='$email',phone='$phone',password='$password' WHERE id=$id ";
+
 ?>
 <!-- singup from start -->
 <div class="container">
+    <?php
+  
+  if ($conn->query($sql) === TRUE) {
+echo '<div class="alert alert-success" role="alert">New record created successfully</div>';
+} else {
+echo '<div class="alert alert-success" role="alert">New record created faild</div>';
+};
+};
+  ?>
     <form action="post">
         <div class="mb-3">
             <label for="exampleInputName" class="form-label">Your Name</label>

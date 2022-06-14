@@ -19,18 +19,24 @@ include 'header.php';
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                echo '<tr>
-                <th scope="row">'. $row["id"]. " </th><td>". $row["name"]. "</td><td> " . $row["email"] . "</td><td>" . $row["phone"] .' </td><td><div class="btn-group">
-                        <button type="button" class="btn btn-outline-primary"><a class="btn-outline-primary"
-                                href="edit.php?id='.$row["id"].'">Edit</a></button>
-            <button type="button" class="btn btn-outline-primary"><a class="btn-outline-primary"
-                                href="display.php?id='.$row["id"].'">Deleted</a></button>
-</div>
-</td>
-</tr>' ;
-}
-}
-
-?>
+                        <th scope="row">'. $row["id"]. " </th>
+                        <td>". $row["name"]. "</td>
+                        <td> " . $row["email"] . "</td>
+                        <td>" . $row["phone"] .' </td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-outline-primary">
+                                <a class="btn-outline-primary" href="edit.php?id='.$row["id"].'">Edit</a>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary">
+                                <a class="btn-outline-primary" href="display.php?id='.$row["id"].'">Deleted</a>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>' ;
+                    }
+                    }
+                    ?>
         </tbody>
     </table>
 </div>

@@ -17,8 +17,8 @@ echo "New record created faild";
 <div class="container">
     <form action="" method="POST">
 
-        <div class="alert alert-success" role="alert">
-        </div>
+  <!--       <div class="alert alert-success" role="alert">
+        </div> -->
         <div class="mb-3">
             <label for="exampleInputName" class="form-label">Your Name</label>
             <input type="text" class="form-control" name="name" value="">

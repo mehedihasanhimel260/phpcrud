@@ -7,20 +7,17 @@ $phone=$_POST['phone'];
 $password=$_POST['password'];
 $sql="INSERT INTO `users_table`(`name`, `email`, `phone`, `password`) VALUES ( '$name', '$email', ' $phone','$password')";
 if ($conn->query($sql) === TRUE) {
-
+echo "New record created successfully";
+} else {
+echo "New record created faild";
+};
+};
 ?>
 <!-- singup from start -->
 <div class="container">
     <form action="" method="POST">
 
         <div class="alert alert-success" role="alert">
-            <?php
-            echo "New record created successfully";
-            } else {
-            echo "New record created faild";
-            };
-            };
-            ?>
         </div>
         <div class="mb-3">
             <label for="exampleInputName" class="form-label">Your Name</label>
@@ -45,8 +42,6 @@ if ($conn->query($sql) === TRUE) {
 
 </div>
 <!-- singup from End -->
-
-
 
 </div>
 </body>
